@@ -13,18 +13,21 @@
 class  Skat
 {
 public:
-Skat(const  std:: string &name , int  stimPaks);
+
+Skat(const std:: string &name, int stimPaks);
+Skat();
 ~Skat();
-int stimPaks ();
+int &stimPaks ();
 const  std:: string &name();
-void  shareStimPaks(int  number , [...]  stock);
+void  shareStimPaks(int  number , int &stock);
 void  addStimPaks(unsigned  int  number);
 void  useStimPaks ();
 void  status ();
 
 private:
-int stock;
-std::string name;
+int _stock;
+std::string _name;
 };
+
 
 #endif
